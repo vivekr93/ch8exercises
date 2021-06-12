@@ -89,3 +89,49 @@ function createAnimal(species, verb, noise){
         }
     }
 }
+
+// ch 10.6 Destructing exercises
+
+/*
+Problem 1:
+console.log(numPlanets); // 8
+console.log(yearNeptuneDiscovered); // 1846
+*/
+
+/*
+Problem 2:
+console.log(discoveryyears); //{yearNeptuneDiscovered: 1846, yearMarsDiscovered: 1659}
+*/
+
+/*
+Problem 3:
+getUserData({firstName: "Alejandro", favoriteColor: "purple"}) // 
+    "Your name is Alejandro and you like purple"
+getUserData({firstName: "Melissa"}) // ?
+    "Your name is Melissa and you like green"
+getUserData({}) // ?
+    "Your name is undefined and you like green"
+*/
+
+/*
+Problem 4:
+console.log(first); // Maya
+console.log(second); // Marisa
+*/
+
+/*
+Problem 5:
+console.log(raindrops); // "Raindrops on roses"
+console.log(whiskers); // "whiskers on kittens"
+console.log(aFewOfMyFavoriteThings); // 
+    ["bright copper kettles, warm woolen mittens", "Brown paper packages"]
+*/
+
+/*
+Problem 6:
+console.log(numbers); // [10, 30, 20]
+*/
+
+//ES5 Array Swap
+//[arr[0], arr[1]] = [arr[1], arr[0]]
+const raceResults = ([first, second, third, ...rest]) => ({first, second, third, rest})
