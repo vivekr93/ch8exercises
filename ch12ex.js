@@ -44,7 +44,7 @@ class Garage {
     this.vehicles = [];
   }
 
- /* add(vehicle) {
+ add(vehicle) {
     if(vehicle instanceof Vehicle){
       if(this.vehicles.length < this.capacity){
         this.vehicles.push(vehicle);
@@ -54,5 +54,4 @@ class Garage {
     }
     else return ("Only vehicles allowed!")
   } 
-*/
 }
