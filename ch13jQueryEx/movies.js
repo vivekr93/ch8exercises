@@ -10,7 +10,7 @@ $("#add").on("click", function(evt) {
     $("ol").append("<li>" + movie + " " + rating + " <button>X</button>" + "</li>");
 })
 
-$(":button").on("click", function(evt) {
+$("ol").on("click", ":button", function(evt) {
     evt.preventDefault();
     $(evt.target).parent().remove();
 })
